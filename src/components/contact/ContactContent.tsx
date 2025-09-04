@@ -50,7 +50,7 @@ const ContactContent = () => {
           
           {/* Introductory Text */}
           <p className="text-xl text-gray-700 mb-12 max-w-lg mx-auto">
-            If you're building in AI or just wanna chat, connect with me below!
+            If you&apos;re building in AI or just wanna chat, connect with me below!
           </p>
           
           {/* Resume Preview Button */}

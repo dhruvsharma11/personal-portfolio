@@ -5,17 +5,13 @@ interface TetrisBlockProps {
   skillName: string;
   isCurrent?: boolean;
   size?: number;
-  position?: { x: number; y: number };
-  isEdge?: boolean;
 }
 
 const TetrisBlock: React.FC<TetrisBlockProps> = ({ 
   color, 
   skillName, 
   isCurrent = false, 
-  size = 16,
-  position,
-  isEdge = false
+  size = 16
 }) => {
   // Create abbreviation for skill names to fit in blocks
   const getAbbreviation = (name: string): string => {

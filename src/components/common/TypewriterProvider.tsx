@@ -13,7 +13,7 @@ export function TypewriterProvider({ children }: { children: ReactNode }) {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [isTyping, setIsTyping] = useState(true);
+  const [isTyping] = useState(true);
 
   // Memoize phrases array to prevent recreation
   const phrases = useMemo(() => ["Backend Fanatic", "AI Enthusiast", "Agentic Developer"], []);

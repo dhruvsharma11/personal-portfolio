@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 interface Experience {
   id: string;
@@ -132,7 +133,6 @@ export default function ExperienceTimeline() {
             // Calculate how well positioned this card is for reading
             // We want the card to be near the top of the viewport but fully visible
             const cardTop = rect.top;
-            const cardHeight = rect.height;
             const cardBottom = rect.bottom;
             
             // Score based on position - higher score for better reading position
@@ -230,9 +230,11 @@ export default function ExperienceTimeline() {
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center gap-4">
                     {exp.logo && (
-                      <img 
+                      <Image 
                         src={exp.logo} 
                         alt={`${exp.company} logo`}
+                        width={48}
+                        height={48}
                         className="w-12 h-12 rounded-lg object-contain"
                       />
                     )}

@@ -1,6 +1,7 @@
 'use client';
 
 import { Suspense, lazy, useState, useCallback } from 'react';
+import Image from 'next/image';
 import Sidebar from '@/components/common/Sidebar';
 import AnimatedNameBox from '@/components/common/AnimatedNameBox';
 import FloatingRingsAnimation from '@/components/common/FloatingRingsAnimation';
@@ -97,11 +98,12 @@ export default function Home() {
                 className="inline-flex items-center underline cursor-pointer hover:text-blue-600"
               >
                 Augment
-                <img
+                <Image
                   src="/logos/logo.svg"
                   alt="Augment logo"
-                  className="w-9 h-9 ml-3"
-                  loading="lazy"
+                  width={36}
+                  height={36}
+                  className="ml-3"
                 />
               </a> 
             </p>

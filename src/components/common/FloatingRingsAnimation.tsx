@@ -128,8 +128,7 @@ export default function FloatingRingsAnimation({ isActive, onRingsComplete, keep
         const phaseProgress = (progress - 0.25) / 0.4;
         
         rainParticles.forEach(particle => {
-          // Smooth movement to ring positions with easing
-          const easing = 1 - Math.pow(1 - phaseProgress, 3); // Cubic ease-out
+          // Smooth movement to ring positions
           particle.x += (particle.targetX - particle.x) * 0.08;
           particle.y += (particle.targetY - particle.y) * 0.08;
           
@@ -162,7 +161,7 @@ export default function FloatingRingsAnimation({ isActive, onRingsComplete, keep
         const phaseProgress = (progress - 0.65) / 0.35;
         
         // Draw fully formed rings with smooth appearance
-        rings.forEach((ring, index) => {
+        rings.forEach((ring) => {
           const finalAlpha = ring.targetAlpha * (0.8 + phaseProgress * 0.2);
           
           ctx.save();

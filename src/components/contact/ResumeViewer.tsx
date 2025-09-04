@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { HiMagnifyingGlass } from "react-icons/hi2";
 
 interface ResumeViewerProps {
   isOpen: boolean;

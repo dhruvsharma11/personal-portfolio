@@ -116,7 +116,7 @@ export default function Tools() {
                 Skills & Technologies
               </h1>
               <p className="text-lg text-gray-600">
-                My technical skills - click 'Build' to start the playground!
+                My technical skills - click &apos;Build&apos; to start the playground!
               </p>
             </div>
           )}
