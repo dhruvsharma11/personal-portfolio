@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { TypewriterProvider } from "@/components/common/TypewriterProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -48,6 +49,7 @@ export default function RootLayout({
         <TypewriterProvider>
           {children}
         </TypewriterProvider>
+        <Analytics />
       </body>
     </html>
   );
